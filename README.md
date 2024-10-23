@@ -1,1 +1,2 @@
-# How to usinh Nextdns on openwrt with http dns proxy
+# How to using Nextdns on openwrt with http dns proxy
+
