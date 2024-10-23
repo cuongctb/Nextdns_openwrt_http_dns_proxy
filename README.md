@@ -1,6 +1,5 @@
 # How to using Nextdns on openwrt with http dns proxy
- <p>
-#!/bin/sh
+ <p> #!/bin/sh
 
 find_next_id() {
     local input_id="$1"
@@ -35,7 +34,4 @@ uci set https-dns-proxy.@https-dns-proxy[-1].bootstrap_dns="8.8.8.8,1.1.1.1"
 uci set https-dns-proxy.@https-dns-proxy[-1].listen_addr="127.0.0.1"
 uci set https-dns-proxy.@https-dns-proxy[-1].listen_port="5054"
 uci commit https-dns-proxy
-/etc/init.d/https-dns-proxy restart
-
-   
- </p>
+/etc/init.d/https-dns-proxy restart </p>
