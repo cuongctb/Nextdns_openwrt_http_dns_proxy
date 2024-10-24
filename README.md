@@ -10,5 +10,6 @@ copy & paste this command :
 
 3.after vi editor pops up, go to nextdns.io  login and create new profile copy id .
 
+![Screenshot_20241024-085853~3](https://github.com/user-attachments/assets/445a9243-b246-49c1-9761-e7222f8d95f6)
 
-
+   ID is in the position as shown in the picture.
