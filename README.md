@@ -1,5 +1,4 @@
 # How to using Nextdns on openwrt, xwrt , padavan ,... with http dns proxy
-# How to using Nextdns on openwrt, xwrt , padavan ,... with http dns proxy
 
 1. ssh to router.
 copy & paste this command :
