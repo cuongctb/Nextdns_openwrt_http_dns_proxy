@@ -2,7 +2,7 @@
 
 1. ssh to router (you can use terminal , termux ( android) , termius ( android) , cmd, ...)
 copy & paste this command :
-# mkdir /opt/scripts/ && cd /opt/scripts/ && wget https://github.com/cuongctb/Nextdns_openwrt_http_dns_proxy/blob/main/nextdns.sh 
+# mkdir /opt/scripts/ && cd /opt/scripts/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
 
 2. after running the above command , continue copying and pasting this command:
 
