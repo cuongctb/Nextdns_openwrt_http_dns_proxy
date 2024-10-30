@@ -2,12 +2,14 @@
 
 1. ssh to router (you can use terminal , termux ( android) , termius ( android) , cmd, ...)
 copy & paste this command :
-# mkdir /opt/scripts/ && cd /opt/scripts/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
+```
+mkdir /opt/scripts/ && cd /opt/scripts/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
+```
 
 2. after running the above command , continue copying and pasting this command:
-
-  chmod +x nextdns.sh && vi nextdns_ids.txt 
-
+```
+chmod +x nextdns.sh && vi nextdns_ids.txt 
+```
 3. after vi editor pops up, go to nextdns.io  login and create new profile copy & paste id .
 
 ![image](https://github.com/user-attachments/assets/76f92ae3-f473-4b77-8378-cb9960d4a883)
@@ -27,7 +29,7 @@ Paste the ID like the image above.
 
 5. Run
   Just copy and pass the following command line
-  # /opt/scripts/nextdns.sh
+  ``` /opt/scripts/nextdns.sh ```
   ![image](https://github.com/user-attachments/assets/a72e3fc6-3747-4669-bea5-3d2dcd42a055)
 
 The white part in the image is the nextdns ID you entered in the nextdns_ids.txt file,
@@ -41,14 +43,22 @@ The white part in the image is the nextdns ID you entered in the nextdns_ids.txt
   6. nextdns runs at startup
 
    you just need to add command enter cron .:
-   # @reboot opt/scripts/nextdns.sh
+```
+  @reboot opt/scripts/nextdns.sh
+```
 
    If you use openwrt, xwrt, you just need to access the router's admin page, then follow the steps: System > startup > Local Startup and paste the command 
-   # opt/scripts/nextdns.sh 
+   ``
+   opt/scripts/nextdns.sh 
+   ```
    or you can ssh into the router and enter the command:
- 
-   # vi /etc/rc.local 
+ ```
+    vi /etc/rc.local 
+  ```
 
    paste the command: 
-   # opt/scripts/nextdns.sh 
-   then press Esc and enter " :wq " and you're done.
+```
+ opt/scripts/nextdns.sh
+ ```
+   then press Esc and enter
+ ```:wq ``` and you're done.
