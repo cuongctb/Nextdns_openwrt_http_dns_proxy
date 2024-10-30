@@ -3,7 +3,7 @@
 1. ssh to router (you can use terminal , termux ( android) , termius ( android) , cmd, ...)
 copy & paste this command :
 ```
-mkdir /opt/scripts/ && cd /opt/scripts/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
+mkdir /opt/nextdns/ && cd /opt/scripts/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
 ```
 
 2. after running the above command , continue copying and pasting this command:
@@ -28,8 +28,12 @@ Paste the ID like the image above.
  *Note that each line must only have one ID.*
 
 5. Run
-  Just copy and pass the following command line
-  ``` /opt/scripts/nextdns.sh ```
+  Just copy and pass the command line
+```
+/opt/nextdns/nextdns.sh
+```
+  
+
   ![image](https://github.com/user-attachments/assets/a72e3fc6-3747-4669-bea5-3d2dcd42a055)
 
 The white part in the image is the nextdns ID you entered in the nextdns_ids.txt file,
@@ -48,17 +52,17 @@ The white part in the image is the nextdns ID you entered in the nextdns_ids.txt
 ```
 
    If you use openwrt, xwrt, you just need to access the router's admin page, then follow the steps: System > startup > Local Startup and paste the command 
-   ``
-   opt/scripts/nextdns.sh 
-   ```
-   or you can ssh into the router and enter the command:
  ```
-    vi /etc/rc.local 
-  ```
+   opt/nextdns/nextdns.sh 
+ ```
+   or you can ssh into the router and enter the command:
+```
+    vi /etc/rc.local
+```
 
    paste the command: 
 ```
- opt/scripts/nextdns.sh
- ```
+ opt/nextdns/nextdns.sh
+``` 
    then press Esc and enter
- ```:wq ``` and you're done.
+" :wq " and you're done.
