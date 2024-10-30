@@ -3,7 +3,7 @@
 find_next_id() {
     local input_id="$1"
     local next_id=""
-    local nextdns_ids="/opt/scripts/nextdns_ids.txt"
+    local nextdns_ids="/opt/nextdns/nextdns_ids.txt"
     line_number=$(grep -n "$input_id" "$nextdns_ids" | cut -d ':' -f 1)
     expr "$line_number" + 0 >/dev/null 2>&1
     if ! [ $? -eq 0 ]; then
