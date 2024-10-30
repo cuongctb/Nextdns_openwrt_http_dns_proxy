@@ -3,7 +3,7 @@
 1. ssh to router (you can use terminal , termux ( android) , termius ( android) , cmd, ...)
 copy & paste this command :
 ```
-mkdir /opt/nextdns/ && cd /opt/scripts/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
+mkdir /opt/nextdns/ && cd /opt/nextdns/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
 ```
 
 2. after running the above command , continue copying and pasting this command:
@@ -48,7 +48,7 @@ The white part in the image is the nextdns ID you entered in the nextdns_ids.txt
 
    you just need to add command enter cron .:
 ```
-  @reboot opt/scripts/nextdns.sh
+  @reboot opt/nextdns/nextdns.sh
 ```
 
    If you use openwrt, xwrt, you just need to access the router's admin page, then follow the steps: System > startup > Local Startup and paste the command 
