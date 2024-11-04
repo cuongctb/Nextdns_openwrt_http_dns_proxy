@@ -51,6 +51,28 @@ The white part in the image is the nextdns ID you entered in the nextdns_ids.txt
   @reboot opt/nextdns/nextdns.sh
 ```
 
+Các server nextdns ở Việt Nam 
+
+Hồ Chí Minh:
+hostname: greencloud-sgn-1.edge.nextdns.io
+ips:
+      103.186.65.82,
+      2400:6ea0::1236:0:0:0:d6e2
+
+hostname:
+lightnode-sgn-1.edge.nextdns.io
+    ips:  38.60.253.211
+ 
+Hà Nội:
+hostname: greencloud-han-1.edge.nextdns.io
+ips: 
+      103.199.17.192
+
+ hostname:
+lightnode-han-1.edge.nextdns.io
+ ips: 
+      38.54.31.178
+
    If you use openwrt, xwrt, you just need to access the router's admin page, then follow the steps: System > startup > Local Startup and paste the command 
  ```
    opt/nextdns/nextdns.sh 
