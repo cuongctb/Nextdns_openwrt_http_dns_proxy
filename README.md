@@ -50,6 +50,21 @@ The white part in the image is the nextdns ID you entered in the nextdns_ids.txt
 ```
   @reboot opt/nextdns/nextdns.sh
 ```
+   If you use openwrt, xwrt, you just need to access the router's admin page, then follow the steps: System > startup > Local Startup and paste the command 
+ ```
+   opt/nextdns/nextdns.sh 
+ ```
+   or you can ssh into the router and enter the command:
+```
+    vi /etc/rc.local
+```
+
+   paste the command: 
+```
+ opt/nextdns/nextdns.sh
+``` 
+   then press Esc and enter
+" :wq " and you're done.
 
 Các server nextdns ở Việt Nam 
 
@@ -72,19 +87,3 @@ ips:
 lightnode-han-1.edge.nextdns.io
  ips: 
       38.54.31.178
-
-   If you use openwrt, xwrt, you just need to access the router's admin page, then follow the steps: System > startup > Local Startup and paste the command 
- ```
-   opt/nextdns/nextdns.sh 
- ```
-   or you can ssh into the router and enter the command:
-```
-    vi /etc/rc.local
-```
-
-   paste the command: 
-```
- opt/nextdns/nextdns.sh
-``` 
-   then press Esc and enter
-" :wq " and you're done.
